@@ -1,4 +1,8 @@
-*
-!.gitignore
-!Anleitung_schnuppertag-script.pdf
-!README.md
+__pycache__/
+.env
+.last_run
+notify.log
+
+# aus anleitung/ nur die PDF
+anleitung/*
+!anleitung/Anleitung_schnuppertag-script.pdf

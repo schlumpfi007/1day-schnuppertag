@@ -6,7 +6,7 @@ Betreuer:in aus `betreuer.csv` eine Sammelmail mit allen offenen Anmeldungen
 solange der Status in Moodle unverändert bleibt.
 
 **Ausführliche Anleitung (PDF):**
-[Anleitung_schnuppertag-script.pdf](https://github.com/schlumpfi007/1day-schnuppertag/blob/main/Anleitung_schnuppertag-script.pdf)
+[Anleitung_schnuppertag-script.pdf](https://github.com/schlumpfi007/1day-schnuppertag/blob/main/anleitung/Anleitung_schnuppertag-script.pdf)
 Sie behandelt Installation, RSS-Feed-Link, Konfiguration, Zeitplan, Aliase, Betreuer-Liste, Betrieb und Fehlerbehebung.
 
 ## Kurzfassung

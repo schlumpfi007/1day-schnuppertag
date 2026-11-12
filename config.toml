@@ -1,0 +1,32 @@
+# Moodle-RSS-Feed der Anmeldungen
+feed_url = ""
+
+# Betreuer-Liste (Spalten: Studiengang;Vorname;Nachname;Mail;Handynummer)
+betreuer_csv = "betreuer.csv"
+
+# Einträge mit diesem Status gelten als offen
+status_trigger = "_Neu"
+
+# Optional: Adresse für Einträge ohne passende:n Betreuer:in (leer = nur Log-Warnung)
+fallback_to = ""
+
+[schedule]
+# time: Uhrzeit des systemd-Timers (install_linux.sh); every_days: prüft notify.py selbst
+time = "08:00"     # Uhrzeit (HH:MM)
+every_days = 1     # 1 = täglich, 2 = jeden 2. Tag, ...
+
+[smtp]
+host = "smtp.office365.com"
+port = 587         # 587 = STARTTLS, 465 = SSL
+starttls = true
+from = "absender@example.com"
+reply_to = ""
+subject = "Offene Schnuppertag-Anmeldungen ({count}) – bitte bearbeiten"
+# Login-Daten: SMTP_USER / SMTP_PASSWORD in .env
+
+[aliases]
+# Jede Gruppe = gleichbedeutende Studiengangs-Kürzel.
+# Betreuer:innen einer Gruppe bekommen Anmeldungen aller Kürzel der Gruppe.
+groups = [
+  ["SI", "SIB"],
+]
